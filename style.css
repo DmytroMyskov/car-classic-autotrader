@@ -254,6 +254,61 @@ main {
       left: 20%;
     }
   }
+
+  .about-us {
+    padding: 0 60px;
+    position: relative;
+
+    .about-us-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 129px;
+    }
+
+    .about-us-title h2 {
+      width: 678px;
+    }
+
+    .about-us-title p {
+      width: 516px;
+      font-size: 20px;
+      line-height: 150%;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    ul li {
+      width: 456px;
+      height: 456px;
+      border-radius: 50%;
+      border: 1px solid var(--primary-color);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    ul li b {
+      font-weight: 500;
+      font-size: 140px;
+    }
+
+    ul li span {
+      font-weight: 300;
+      font-size: 24px;
+    }
+  }
+
+  .services {
+    padding: 0 60px;
+    margin-top: 144px;
+  }
 }
 
 /* .faq {

@@ -231,28 +231,6 @@ main {
       background-color: var(--primary-color);
       position: relative;
     }
-
-    .all-cars button {
-      border: 1px solid transparent;
-      transition: 0.3s ease;
-    }
-
-    .all-cars button:hover {
-      background-color: transparent;
-      color: var(--secondary-color);
-      border: 1px solid var(--secondary-color);
-      transition: 0.3s ease;
-      cursor: pointer;
-      font-weight: 500;
-    }
-
-    .all-cars-img {
-      width: 600px;
-      height: 266px;
-      position: absolute;
-      top: 15%;
-      left: 20%;
-    }
   }
 
   .about-us {
@@ -323,6 +301,10 @@ main {
       transition: 0.3s ease;
     }
 
+    .services-title button a {
+      font-weight: 500;
+    }
+
     .services-title button:hover {
       background-color: var(--primary-color);
       color: var(--secondary-color);
@@ -367,48 +349,86 @@ main {
   }
 
   .faq {
+    padding: 0 60px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+    .faq-title {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .faq-title button {
+      width: 284px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .faq-title button:hover {
+      transition: 0.3s ease-in-out;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+    }
+
+    .faq-title button a {
+      font-weight: 500;
+    }
+
     .faq-container {
-      max-width: 700px;
-      margin: auto;
+      max-width: 796px;
     }
 
     .faq-item {
       border-bottom: 1px solid #ccc;
-      padding: 15px 0;
+      padding: 28px 0;
       cursor: pointer;
+      transition: 0.3s;
     }
 
     .faq-question {
+      height: 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .faq-question span {
       font-weight: 500;
+      font-size: 24px;
     }
 
     .faq-question button {
       background: none;
       border: none;
-      font-size: 24px;
-      font-weight: bold;
+      font-size: 50px;
+      font-weight: 200;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      transition: 0.3s;
     }
 
     .faq-answer {
       max-height: 0;
       overflow: hidden;
-      opacity: 0;
-      transition: all 0.4s ease;
-      font-size: 15px;
+      transition: 0.3s;
+      font-size: 16px;
+      font-weight: 300;
       color: #555;
-      line-height: 1.5;
     }
 
     .faq-item.active .faq-answer {
       max-height: 300px;
-      opacity: 1;
-      margin-top: 10px;
+      opacity: 0.7;
+      margin-top: 20px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
     }
 
     .faq-item.active .faq-question button {
